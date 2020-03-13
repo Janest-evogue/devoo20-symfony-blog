@@ -5,4 +5,7 @@
 {% block body %}
     {# cf le __toString() dans Category #}
     <h1>{{ category }}</h1>
+
+    <h2>Derniers articles</h2>
+    {% include 'article/_list.html.twig' with {"articles": articles} only %}
 {% endblock %}
