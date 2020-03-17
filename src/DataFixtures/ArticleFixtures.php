@@ -47,7 +47,7 @@ class ArticleFixtures extends Fixture implements DependentFixtureInterface
                 ->setAuthor($this->getReference('admin'))
                 ->setCategory($category)
                 // 80% d'articles avec image, catégorie computer (le nom du fichier et pas le chemin complet en bdd)
-                ->setImage($faker->optional(0.8)->image($imageDir, 800, 300, ['computer'], false))
+                //->setImage($faker->optional(0.8)->image($imageDir, 800, 300, ['computer'], false))
             ;
 
             for ($j = 0; $j <= rand(0, 20); $j++) {
